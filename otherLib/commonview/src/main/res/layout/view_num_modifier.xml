@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_demand_border_grey"
+    android:layout_width="wrap_content"
+    android:layout_height="26dp">
+    <ImageView
+        android:id="@+id/btn_sub"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:src="@mipmap/ico_minus"/>
+
+    <include layout="@layout/layout_common_line_vertical"/>
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:minWidth="28dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="1"
+        android:maxLength="4"
+        android:textColor="#666666"
+        android:textSize="14sp"/>
+
+    <include layout="@layout/layout_common_line_vertical"/>
+
+    <ImageView
+        android:id="@+id/btn_add"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:src="@mipmap/ico_add"/>
+</LinearLayout>

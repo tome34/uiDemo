@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icons"
+    android:orientation="vertical"
+    >
+
+    <!--搜索栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/mall_iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@mipmap/fanhui"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/layout_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="#efefef"
+            android:orientation="horizontal"
+            >
+
+
+            <EditText
+                android:id="@+id/tv_keyword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:imeOptions="actionSearch"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:hint="搜索您想要的商品"
+                />
+            <ImageView
+                android:id="@+id/mall_iv_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@mipmap/heduidingdan6"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/mall_image_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@mipmap/mall_good_search"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/shf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.fec.view.common.searchHistory.SearchHistoryFragment"
+        />
+
+</LinearLayout>

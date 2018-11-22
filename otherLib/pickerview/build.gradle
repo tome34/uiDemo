@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 30
+        versionName "4.1.5"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+allprojects {
+    tasks.withType(Javadoc) {
+        //兼容中文字符
+        options {
+            encoding "UTF-8"
+            charSet 'UTF-8'
+            links "http://docs.oracle.com/javase/7/docs/api"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    if (gradle.startParameter.taskNames.toString().toUpperCase().contains('UPLOAD')) {
+        compileOnly 'com.google.code.gson:gson:2.8.5'
+        api "com.contrarywind:wheelview:4.0.7-fec"
+    } else {
+        api project(path: ':otherLib:wheelview')
+        implementation 'com.google.code.gson:gson:2.8.5'
+    }
+}
+
+
+ext.GROUP = "com.bigkoo"
+ext.POM_ARTIFACT_ID = 'pickerview'
+ext.VERSION_CODE = '4.1.5-fec'
+ext.UPLOAD_DESC = "添加时分秒的范围限制,修改联动范围限制逻辑代码,添加fec地址选择支持"
+ext.TOBASE = true
+apply from: "${rootProject.rootDir}/maven_upload.gradle"

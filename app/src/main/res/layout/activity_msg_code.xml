@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fec.fecuiunifydemo.activity.MsgCodeActivity"
+    >
+
+    <com.fec.view.common.topbar.TopBar
+        android:id="@+id/topbar"
+        app:topbar_title_color="@color/white"
+        app:topbar_bg_color="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <com.fec.view.common.ValidateCodeTimer
+            android:id="@+id/get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/get_verify_code"
+            android:background="@drawable/shap_ring_red"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fec.fecuiunifydemo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <!-- 高德地图 -->
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RatingBarActivity">
+        </activity>
+        <activity android:name=".activity.EmptyActivity">
+        </activity>
+        <activity android:name=".activity.SwitchButtonActivity">
+        </activity>
+        <activity android:name=".fragment.QDTabSegmentScrollableModeActivity"/>
+        <activity android:name=".fragment.QDTabSegmentFixModeActivity"/>
+        <activity android:name=".activity.CustomdownTimeActivity">
+        </activity>
+        <activity android:name=".activity.MarqueeStyleActivity">
+        </activity>
+        <activity android:name=".activity.PhotoViewActivity">
+        </activity>
+        <activity android:name=".activity.PictureSelectorActivity">
+        </activity>
+        <activity android:name=".activity.PopupAutoActivity">
+        </activity>
+        <activity android:name=".activity.BadgeActivity">
+        </activity>
+        <activity android:name=".activity.SearchActivity"/>
+        <activity android:name=".activity.TextAreaActivity"/>
+        <activity android:name=".activity.TranslucentActivity"/>
+        <activity android:name=".activity.ImgTranslucentActivity"/>
+        <activity android:name=".activity.RefreshLayoutActivity">
+        </activity>
+        <activity android:name=".activity.MsgCodeActivity">
+        </activity>
+        <activity android:name=".activity.ZxingActivity">
+        </activity>
+        <activity android:name=".activity.CameraActivity">
+        </activity>
+        <activity android:name=".activity.NumberActivity">
+        </activity>
+        <activity android:name=".activity.LoopViewActivity"/>
+        <activity android:name=".activity.ImageListActivity">
+        </activity>
+        <activity android:name=".activity.ButtonStyleActivity">
+        </activity>
+        <activity android:name=".activity.AmapAddressActivity">
+        </activity>
+
+        <!-- 高德地图key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b8e13acefa18ca461267f42b0cbd3208">
+        </meta-data>
+
+        <activity android:name=".activity.SearchAddressActivity">
+        </activity>
+        <activity android:name=".activity.HeaderScrollViewActivity">
+        </activity>
+        <activity android:name=".activity.EmojiActivity">
+        </activity>
+    </application>
+
+</manifest>

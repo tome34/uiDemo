@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fec.fecuiunifydemo.activity.PhotoViewActivity"
+    >
+    <com.fec.view.common.topbar.TopBar
+        android:id="@+id/topbar"
+        app:topbar_title_color="@color/white"
+        app:topbar_bg_color="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <com.fec.fecuiunifydemo.widget.HackyViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:background="@color/color_66">
+
+    </com.fec.fecuiunifydemo.widget.HackyViewPager>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:background="@drawable/shap_ring_gray"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/tv_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="1/4"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+/*
+ * Copyright (c) 18-4-28 下午3:41. XQ Yang
+ */
+
+apply plugin: 'maven'
+uploadArchives {
+    doFirst {
+        logger.quiet("---------------------------start upload--------------------------------\t\n")
+        logger.quiet(String.format("groupId = %s\t\nartifactId = %s\t\nversion = %s\t\nuploadDesc = %s\t\n", GROUP, POM_ARTIFACT_ID, VERSION_CODE, UPLOAD_DESC))
+    }
+    doLast {
+        logger.quiet("---------------------------upload finish--------------------------------")
+    }
+    def URL = ""
+    if (TOBASE) {
+        URL = 'http://192.168.2.39:8908/repository/base/'
+    } else {
+        URL = 'http://192.168.2.39:8908/repository/yunmall/'
+    }
+
+    repositories {
+        mavenDeployer {
+            repository(url: URL) {
+                authentication(userName: "void", password: "void")
+            }
+            pom.project {
+                version VERSION_CODE
+                artifactId POM_ARTIFACT_ID
+                groupId GROUP
+                description UPLOAD_DESC
+            }
+        }
+    }
+}
+task androidSourcesJar(type: Jar) {
+    group = 'jar'
+    classifier = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+artifacts {
+    archives androidSourcesJar
+}

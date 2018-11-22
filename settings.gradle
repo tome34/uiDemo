@@ -1,0 +1,13 @@
+include ':app',
+    ':otherLib:alertview',
+    ':otherLib:kprogresshud',
+    ':otherLib:flowlayout-lib',
+    ':otherLib:commonview',
+    ':otherLib:pickerview',
+    ':otherLib:wheelview',
+    ':otherLib:switchbutton',
+    ':otherLib:addresswheel',
+    ':otherLib:refresh-layout',
+    ':otherLib:zxing-lib',
+    ':otherLib:emoji-keyboard',
+    ':otherLib:emoji'

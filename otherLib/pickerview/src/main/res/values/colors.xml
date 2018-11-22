@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--取消按钮颜色-->
+    <color name="alert_button_cancel">#ff3b30</color>
+    <!--高亮按钮颜色-->
+    <color name="alert_button_destructive">#007aff</color>
+</resources>

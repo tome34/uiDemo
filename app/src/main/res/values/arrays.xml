@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main">
+        　　
+        <item>弹窗</item>
+        　　
+        <item>Tips</item>
+        　　
+        <item>选择器</item>
+        　　
+        <item>按钮</item>
+        　　
+        <item>朝阳区</item>
+        　　
+    </string-array>
+
+
+
+
+</resources>

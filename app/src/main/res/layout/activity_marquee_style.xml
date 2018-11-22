@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fec.fecuiunifydemo.activity.MarqueeStyleActivity"
+    >
+    <com.fec.view.common.topbar.TopBar
+        android:id="@+id/topbar"
+        app:topbar_title_color="@color/white"
+        app:topbar_bg_color="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_oval_radius"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/speaker" />
+
+
+        <com.fec.view.common.marquee.SimpleMarqueeView
+            android:id="@+id/marqueeView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:smvTextColor="@color/white"
+            app:smvTextEllipsize="end"
+            app:smvTextGravity="center_vertical"
+            app:smvTextSingleLine="true"
+            app:smvTextSize="15sp"></com.fec.view.common.marquee.SimpleMarqueeView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_oval_radius"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+       <!-- <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </ViewFlipper>-->
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/speaker" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="二货,翻滚吧!"/>
+
+
+        <com.fec.view.common.marquee.SimpleMarqueeView
+            android:id="@+id/marqueeView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:flipInterval="2500"
+            android:inAnimation="@anim/in_right"
+            android:outAnimation="@anim/out_left"
+            app:marqueeAnimDuration="2000"
+            app:smvTextColor="@color/white"
+            app:smvTextGravity="center_vertical"
+            app:smvTextSize="15sp"
+            android:visibility="gone">
+
+        </com.fec.view.common.marquee.SimpleMarqueeView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_oval_radius"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <com.fec.view.common.marquee.v2.TipView
+            android:id="@+id/tip_view1"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_oval_radius"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <com.fec.view.common.marquee.v2.TipView
+            android:id="@+id/tip_view2"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:text="底部弹窗"
+    android:textSize="14sp"
+    android:padding="8dp"
+    android:background="#eeeeee"
+    android:layout_marginLeft="18dp"
+    android:layout_height="wrap_content">
+
+</TextView>

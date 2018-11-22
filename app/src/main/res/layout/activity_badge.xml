@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".activity.BadgeActivity"
+    >
+
+    <com.fec.view.common.topbar.TopBar
+        android:id="@+id/topbar1"
+        app:topbar_title_color="@color/white"
+        app:topbar_bg_color="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="24dp"
+        android:text="+++"
+
+        />
+    <Button
+        android:layout_marginTop="24dp"
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:text="+++"
+        android:visibility="visible"
+        />
+    <TextView
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="位置支持上下左右,背景和字体颜色可定制,支持字符串"
+        android:textSize="35sp"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@android:drawable/sym_def_app_icon"
+        android:visibility="gone"
+        />
+</LinearLayout>

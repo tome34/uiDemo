@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.fec.fecuiunifydemo.activity.EmptyActivity"
+    >
+
+    <com.fec.view.common.topbar.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:topbar_bg_color="@color/colorPrimary"
+        app:topbar_title_color="@color/white"
+        />
+
+    <com.fec.view.common.empty.StateView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyMsg="暂无数据"
+        app:emptyIcon="@mipmap/icon_empty"
+        app:errorIcon="@mipmap/ic_error"
+        app:errorMsg="出错了"
+        app:bindId="@+id/tv_success"
+        >
+        <TextView
+            android:id="@+id/tv_success"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="这个是成功界面"
+            />
+    </com.fec.view.common.empty.StateView>
+
+</LinearLayout>

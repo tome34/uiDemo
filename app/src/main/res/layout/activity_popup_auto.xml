@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/config_color_white"
+    >
+
+    <com.fec.view.common.topbar.TopBar
+        android:id="@+id/topbar"
+        app:topbar_title_color="@color/white"
+        app:topbar_bg_color="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/message_stroke_line"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+       <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">-->
+
+            <Button
+                android:id="@+id/actiontBtn1"
+                style="@style/QDRadiusButton"
+                android:layout_centerInParent="true"
+                android:text="显示普通浮层"/>
+
+       <!-- </RelativeLayout>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/actiontBtn2"
+                style="@style/QDRadiusButton"
+                android:layout_centerInParent="true"
+                android:text="显示列表浮层"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

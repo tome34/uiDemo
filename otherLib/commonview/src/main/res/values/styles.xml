@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义仿IOS的dialog提示框的样式 -->
+    <style name="TipDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 自定义仿IOS的dialog提示框 xml 的样式 -->
+    <style name="tip_dialog_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:background">@drawable/tip_dialog_bg</item>
+    </style>
+
+
+
+    <style name="QDTopBar" parent="TopBar">
+        <item name="topbar_bg_color">?attr/colorPrimary</item>
+        <item name="topbar_title_color">@color/config_color_white</item>
+        <item name="topbar_subtitle_color">@color/config_color_white</item>
+        <item name="topbar_text_btn_color_state_list">@color/white</item>
+        <item name="topbar_image_btn_height">48dp</item>
+    </style>
+
+    <!--********************* TopBar *********************-->
+    <style name="TopBar">
+        <item name="topbar_separator_color">?attr/colorPrimaryDark</item>
+        <item name="topbar_separator_height">1px</item>
+        <item name="topbar_bg_color">@color/config_color_white</item>
+        <item name="topbar_need_separator">true</item>
+        <item name="topbar_left_back_drawable_id">@mipmap/topbar_item_left_back</item>
+        <item name="topbar_title_gravity">center</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="topbar_title_color">@color/white</item>
+        <item name="topbar_title_text_size">17sp</item>
+        <item name="topbar_title_text_size_with_subtitle">16sp</item>
+        <item name="topbar_title_margin_horizontal_when_no_btn_aside">0dp</item>
+        <item name="topbar_title_container_padding_horizontal">8dp</item>
+        <item name="topbar_subtitle_text_size">11sp</item>
+        <item name="topbar_subtitle_color">@color/white</item>
+        <item name="topbar_image_btn_width">48dp</item>
+        <item name="topbar_image_btn_height">48dp</item>
+        <item name="topbar_text_btn_padding_horizontal">12dp</item>
+        <item name="topbar_text_btn_color_state_list">@color/grey</item>
+        <item name="topbar_text_btn_text_size">16sp</item>
+    </style>
+
+    <!--********************* PopupWindow弹框 *********************-->
+    <style name="Animation" parent="@android:style/Animation"/>
+
+    <style name="Animation.PopUpMenu"/>
+
+    <style name="Animation.PopUpMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animation.PopUpMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animation.PopUpMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+<!---->
+    <style name="Animation.PopDownMenu"/>
+
+    <style name="Animation.PopDownMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Animation.PopDownMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animation.PopDownMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+
+    <!--********************* QMUI *********************-->
+    <style name="QMUI" parent="android:Theme.Holo.Light">
+        <item name="qmui_general_shadow_alpha">0.25</item>
+        <item name="qmui_general_shadow_elevation">14dp</item>
+    </style>
+
+</resources>

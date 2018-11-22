@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fec.fecuiunifydemo.activity.SearchAddressActivity"
+    >
+
+    <!--搜索栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/mall_iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@mipmap/fanhui"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/layout_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="#efefef"
+            android:orientation="horizontal"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/input_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_gravity="center_vertical"
+                android:inputType="text|textAutoComplete"
+                android:background="@color/transparent"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="查找小区/大厦/学校等"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+
+         <!--   <EditText
+                android:id="@+id/tv_keyword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="查找小区/大厦/学校等"
+                android:imeOptions="actionSearch"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                />-->
+            <ImageView
+                android:id="@+id/mall_iv_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@mipmap/heduidingdan6"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/mall_image_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@mipmap/mall_good_search"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_marginTop="30dp"
+        android:text="未能查找到相关地点"
+        android:visibility="gone"
+        style="@style/txt_style"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <ProgressBar
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+        <TextView
+            android:text="正在查找..."
+            android:visibility="visible"
+            style="@style/txt_style3"
+            />
+    </LinearLayout>
+
+</LinearLayout>

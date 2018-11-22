@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="topbar_item_left_back" type="id"/>
+    <item name="view_can_not_cache_tag" type="id"/>
+    <item name="tab_segment_item_id" type="id"/>
+    <item name="topbar_right_change_button" type="id"/>
+
+</resources>

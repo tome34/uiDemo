@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fec.fecuiunifydemo.activity.CustomdownTimeActivity"
+    >
+
+    <com.fec.view.common.topbar.TopBar
+        android:id="@+id/topbar"
+        app:topbar_title_color="@color/white"
+        app:topbar_bg_color="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+   <!-- <com.fec.view.common.countDownTime.CountdownView
+        android:id="@+id/cv_countdownViewTest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:isHideTimeBackground="false"
+        app:isShowDay="false"
+        app:isShowHour="true"
+        app:isShowMillisecond="false"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isShowTimeBgDivisionLine="false"
+        app:suffixGravity="center"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="20sp"
+        app:timeBgColor="#FF5000"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="20sp"/>-->
+
+    <com.fec.view.common.countDownTime.CountdownView
+        android:id="@+id/cv_countdownViewTest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:isHideTimeBackground="false"
+        app:isShowDay="false"
+        app:isShowHour="true"
+        app:isShowMillisecond="false"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:suffixGravity="center"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="30sp"
+        app:timeBgDivisionLineSize="1dp"
+        app:timeBgRadius="3dp"
+        app:timeBgSize="50dp"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="30sp"/>
+
+
+    <com.fec.view.common.countDownTime.CountdownView
+        android:id="@+id/cv_countdownViewTest3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:isShowDay="false"
+        app:isShowHour="false"
+        app:isShowMillisecond="false"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:suffixGravity="center"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="17sp"
+        app:timeTextColor="#000000"
+        app:timeTextSize="20sp"/>
+
+    <com.fec.view.common.countDownTime.CountdownView
+        android:id="@+id/cv_countdownViewTest4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMillisecond="false"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isTimeTextBold="true"
+        app:suffixDay="天"
+        app:suffixGravity="bottom"
+        app:suffixHour="小时"
+        app:suffixMinute="分钟"
+        app:suffixSecond="秒"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="12sp"
+        app:timeTextColor="#000000"
+        app:timeTextSize="22sp"/>
+
+    <!--<com.fec.view.common.countDownTime.CountdownView
+        android:id="@+id/cv_countdownViewTest6"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sel_btn"
+        app:isShowDay="false"
+        app:isShowHour="true"
+        app:isShowMillisecond="false"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:suffixGravity="center"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="20sp"
+        app:timeTextColor="#000000"
+        app:timeTextSize="20sp"/>-->
+
+</LinearLayout>

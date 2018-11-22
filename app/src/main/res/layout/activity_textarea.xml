@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BadgeActivity"
+    >
+    <com.fec.view.common.topbar.TopBar
+        android:id="@+id/topbar"
+        app:topbar_title_color="@color/white"
+        app:topbar_bg_color="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+   <com.fec.view.common.layout.TextArea
+       android:id="@+id/ta"
+       android:layout_marginTop="20dp"
+       app:hint="请输入评论"
+       app:textColor="#333333"
+       app:textSize="14sp"
+       app:maxNum="260"
+       app:minLines="5"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv1"
+        android:text="点击获取内容"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
